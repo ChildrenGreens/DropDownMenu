@@ -7,16 +7,30 @@
 //
 
 #import "ViewController.h"
+#import "DropDownMenuView.h"
+
 
 @interface ViewController ()
-
+@property (nonatomic, strong)DropDownMenuView *dropDownMenuView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // 设置导航栏标题
+    self.navigationItem.title = @"商家";
+    // 适配
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    // 背景色
+    self.view.backgroundColor = [UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1];
+    
+    
+    self.dropDownMenuView = [[DropDownMenuView alloc] init];
+    [self.view addSubview:self.dropDownMenuView];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

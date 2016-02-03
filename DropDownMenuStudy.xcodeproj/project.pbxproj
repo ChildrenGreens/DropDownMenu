@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D7E526F1C618B9E0039F1F1 /* DropDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7E526E1C618B9E0039F1F1 /* DropDownView.m */; };
+		6DAB4C241C61D9F70088888F /* BottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAB4C231C61D9F70088888F /* BottomView.m */; };
+		6DAB4C281C61E57D0088888F /* type_dotdotdot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DAB4C261C61E57D0088888F /* type_dotdotdot@2x.png */; };
+		6DAB4C291C61E57D0088888F /* type_dotdotdot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DAB4C271C61E57D0088888F /* type_dotdotdot@3x.png */; };
 		6DDCB5551C607B69009ACF3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDCB5541C607B69009ACF3F /* main.m */; };
 		6DDCB5581C607B69009ACF3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDCB5571C607B69009ACF3F /* AppDelegate.m */; };
 		6DDCB55B1C607B69009ACF3F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDCB55A1C607B69009ACF3F /* ViewController.m */; };
@@ -15,6 +19,9 @@
 		6DDCB5631C607B69009ACF3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DDCB5611C607B69009ACF3F /* LaunchScreen.storyboard */; };
 		6DDCB56E1C607B69009ACF3F /* DropDownMenuStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDCB56D1C607B69009ACF3F /* DropDownMenuStudyTests.m */; };
 		6DDCB5791C607B69009ACF3F /* DropDownMenuStudyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDCB5781C607B69009ACF3F /* DropDownMenuStudyUITests.m */; };
+		6DDCB58A1C607D1E009ACF3F /* DropDownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDCB5891C607D1E009ACF3F /* DropDownMenuView.m */; };
+		6DDCB58D1C607F9E009ACF3F /* DropDownItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDCB58C1C607F9E009ACF3F /* DropDownItemView.m */; };
+		6DDCB5901C608069009ACF3F /* DropViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDCB58F1C608069009ACF3F /* DropViewItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D7E526D1C618B9E0039F1F1 /* DropDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownView.h; sourceTree = "<group>"; };
+		6D7E526E1C618B9E0039F1F1 /* DropDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownView.m; sourceTree = "<group>"; };
+		6DAB4C221C61D9F70088888F /* BottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomView.h; sourceTree = "<group>"; };
+		6DAB4C231C61D9F70088888F /* BottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomView.m; sourceTree = "<group>"; };
+		6DAB4C261C61E57D0088888F /* type_dotdotdot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "type_dotdotdot@2x.png"; sourceTree = "<group>"; };
+		6DAB4C271C61E57D0088888F /* type_dotdotdot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "type_dotdotdot@3x.png"; sourceTree = "<group>"; };
 		6DDCB5501C607B69009ACF3F /* DropDownMenuStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropDownMenuStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DDCB5541C607B69009ACF3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6DDCB5561C607B69009ACF3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +64,12 @@
 		6DDCB5741C607B69009ACF3F /* DropDownMenuStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropDownMenuStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DDCB5781C607B69009ACF3F /* DropDownMenuStudyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropDownMenuStudyUITests.m; sourceTree = "<group>"; };
 		6DDCB57A1C607B69009ACF3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DDCB5881C607D1E009ACF3F /* DropDownMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownMenuView.h; sourceTree = "<group>"; };
+		6DDCB5891C607D1E009ACF3F /* DropDownMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownMenuView.m; sourceTree = "<group>"; };
+		6DDCB58B1C607F9E009ACF3F /* DropDownItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownItemView.h; sourceTree = "<group>"; };
+		6DDCB58C1C607F9E009ACF3F /* DropDownItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownItemView.m; sourceTree = "<group>"; };
+		6DDCB58E1C608069009ACF3F /* DropViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropViewItem.h; sourceTree = "<group>"; };
+		6DDCB58F1C608069009ACF3F /* DropViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropViewItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DAB4C251C61E5740088888F /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				6DAB4C261C61E57D0088888F /* type_dotdotdot@2x.png */,
+				6DAB4C271C61E57D0088888F /* type_dotdotdot@3x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		6DDCB5471C607B69009ACF3F = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +129,8 @@
 		6DDCB5521C607B69009ACF3F /* DropDownMenuStudy */ = {
 			isa = PBXGroup;
 			children = (
+				6DAB4C251C61E5740088888F /* Image */,
+				6DDCB5861C607B79009ACF3F /* DropDownMenu */,
 				6DDCB5561C607B69009ACF3F /* AppDelegate.h */,
 				6DDCB5571C607B69009ACF3F /* AppDelegate.m */,
 				6DDCB5591C607B69009ACF3F /* ViewController.h */,
@@ -138,6 +168,31 @@
 				6DDCB57A1C607B69009ACF3F /* Info.plist */,
 			);
 			path = DropDownMenuStudyUITests;
+			sourceTree = "<group>";
+		};
+		6DDCB5861C607B79009ACF3F /* DropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				6DDCB5871C607BFF009ACF3F /* View */,
+			);
+			path = DropDownMenu;
+			sourceTree = "<group>";
+		};
+		6DDCB5871C607BFF009ACF3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DDCB5881C607D1E009ACF3F /* DropDownMenuView.h */,
+				6DDCB5891C607D1E009ACF3F /* DropDownMenuView.m */,
+				6DDCB58B1C607F9E009ACF3F /* DropDownItemView.h */,
+				6DDCB58C1C607F9E009ACF3F /* DropDownItemView.m */,
+				6DDCB58E1C608069009ACF3F /* DropViewItem.h */,
+				6DDCB58F1C608069009ACF3F /* DropViewItem.m */,
+				6D7E526D1C618B9E0039F1F1 /* DropDownView.h */,
+				6D7E526E1C618B9E0039F1F1 /* DropDownView.m */,
+				6DAB4C221C61D9F70088888F /* BottomView.h */,
+				6DAB4C231C61D9F70088888F /* BottomView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +301,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DAB4C281C61E57D0088888F /* type_dotdotdot@2x.png in Resources */,
+				6DAB4C291C61E57D0088888F /* type_dotdotdot@3x.png in Resources */,
 				6DDCB5631C607B69009ACF3F /* LaunchScreen.storyboard in Resources */,
 				6DDCB5601C607B69009ACF3F /* Assets.xcassets in Resources */,
 				6DDCB55E1C607B69009ACF3F /* Main.storyboard in Resources */,
@@ -273,9 +330,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D7E526F1C618B9E0039F1F1 /* DropDownView.m in Sources */,
 				6DDCB55B1C607B69009ACF3F /* ViewController.m in Sources */,
 				6DDCB5581C607B69009ACF3F /* AppDelegate.m in Sources */,
+				6DDCB5901C608069009ACF3F /* DropViewItem.m in Sources */,
+				6DDCB58A1C607D1E009ACF3F /* DropDownMenuView.m in Sources */,
 				6DDCB5551C607B69009ACF3F /* main.m in Sources */,
+				6DDCB58D1C607F9E009ACF3F /* DropDownItemView.m in Sources */,
+				6DAB4C241C61D9F70088888F /* BottomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +476,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DropDownMenuStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = caiqiujun.DropDownMenuStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,7 +489,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DropDownMenuStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = caiqiujun.DropDownMenuStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -499,6 +565,7 @@
 				6DDCB57F1C607B69009ACF3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DDCB5801C607B69009ACF3F /* Build configuration list for PBXNativeTarget "DropDownMenuStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +574,7 @@
 				6DDCB5821C607B69009ACF3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DDCB5831C607B69009ACF3F /* Build configuration list for PBXNativeTarget "DropDownMenuStudyUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +583,7 @@
 				6DDCB5851C607B69009ACF3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
