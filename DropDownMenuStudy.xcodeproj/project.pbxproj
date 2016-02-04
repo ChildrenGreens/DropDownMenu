@@ -11,6 +11,7 @@
 		6DAB4C241C61D9F70088888F /* BottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAB4C231C61D9F70088888F /* BottomView.m */; };
 		6DAB4C281C61E57D0088888F /* type_dotdotdot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DAB4C261C61E57D0088888F /* type_dotdotdot@2x.png */; };
 		6DAB4C291C61E57D0088888F /* type_dotdotdot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DAB4C271C61E57D0088888F /* type_dotdotdot@3x.png */; };
+		6DAB4C2D1C61F2BC0088888F /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAB4C2C1C61F2BC0088888F /* MainTableViewCell.m */; };
 		6DDCB5551C607B69009ACF3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDCB5541C607B69009ACF3F /* main.m */; };
 		6DDCB5581C607B69009ACF3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDCB5571C607B69009ACF3F /* AppDelegate.m */; };
 		6DDCB55B1C607B69009ACF3F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDCB55A1C607B69009ACF3F /* ViewController.m */; };
@@ -48,6 +49,8 @@
 		6DAB4C231C61D9F70088888F /* BottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomView.m; sourceTree = "<group>"; };
 		6DAB4C261C61E57D0088888F /* type_dotdotdot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "type_dotdotdot@2x.png"; sourceTree = "<group>"; };
 		6DAB4C271C61E57D0088888F /* type_dotdotdot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "type_dotdotdot@3x.png"; sourceTree = "<group>"; };
+		6DAB4C2B1C61F2BC0088888F /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		6DAB4C2C1C61F2BC0088888F /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
 		6DDCB5501C607B69009ACF3F /* DropDownMenuStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropDownMenuStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DDCB5541C607B69009ACF3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6DDCB5561C607B69009ACF3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +107,15 @@
 				6DAB4C271C61E57D0088888F /* type_dotdotdot@3x.png */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		6DAB4C2A1C61F28D0088888F /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6DAB4C2B1C61F2BC0088888F /* MainTableViewCell.h */,
+				6DAB4C2C1C61F2BC0088888F /* MainTableViewCell.m */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		6DDCB5471C607B69009ACF3F = {
@@ -181,6 +193,7 @@
 		6DDCB5871C607BFF009ACF3F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6DAB4C2A1C61F28D0088888F /* TableViewCell */,
 				6DDCB5881C607D1E009ACF3F /* DropDownMenuView.h */,
 				6DDCB5891C607D1E009ACF3F /* DropDownMenuView.m */,
 				6DDCB58B1C607F9E009ACF3F /* DropDownItemView.h */,
@@ -333,6 +346,7 @@
 				6D7E526F1C618B9E0039F1F1 /* DropDownView.m in Sources */,
 				6DDCB55B1C607B69009ACF3F /* ViewController.m in Sources */,
 				6DDCB5581C607B69009ACF3F /* AppDelegate.m in Sources */,
+				6DAB4C2D1C61F2BC0088888F /* MainTableViewCell.m in Sources */,
 				6DDCB5901C608069009ACF3F /* DropViewItem.m in Sources */,
 				6DDCB58A1C607D1E009ACF3F /* DropDownMenuView.m in Sources */,
 				6DDCB5551C607B69009ACF3F /* main.m in Sources */,
@@ -478,7 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DropDownMenuStudy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = caiqiujun.DropDownMenuStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -491,7 +505,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DropDownMenuStudy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = caiqiujun.DropDownMenuStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
