@@ -13,10 +13,10 @@
 @interface DropDownView ()<UITableViewDataSource, UITableViewDelegate>
 /// 灰色背景视图
 @property (nonatomic, strong)UIView *downView;
-/// 主选项卡
-@property (nonatomic, strong)UITableView *mainTableView;
+
 /// 辅选项卡
 @property (nonatomic, strong)UITableView *secondaryTableView;
+
 
 @end
 
@@ -56,11 +56,31 @@
     UIView *header = [[UIView alloc] initWithFrame:CGRectZero];
     self.mainTableView.tableFooterView = header;
     
+    // 重写UITableView的方法是分割线从最左侧开始
+    if ([self.mainTableView respondsToSelector:@selector(setSeparatorInset:)]) {
+        [self.mainTableView setSeparatorInset:UIEdgeInsetsZero];
+    }
+    if ([self.mainTableView respondsToSelector:@selector(setLayoutMargins:)]) {
+        [self.mainTableView setLayoutMargins:UIEdgeInsetsZero];
+    }
+    
 }
 
+
+
 /**
+ *  设置默认选中那一行
+ *
+ *
  *
  */
+- (void)setDefualtSelectedWithRow:(NSUInteger)selectedRow {
+    
+    NSIndexPath *first = [NSIndexPath indexPathForRow:selectedRow inSection:0];
+    [self.mainTableView selectRowAtIndexPath:first
+                                    animated:YES
+                              scrollPosition:UITableViewScrollPositionTop];
+}
 
 
 
@@ -122,17 +142,32 @@
 
 #pragma mark UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return 20;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"mainCell" forIndexPath:indexPath];
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsZero];
+    }
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
+    
+}
+
+
 #pragma mark UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    // 触发代理
+    [self.delegate selectRowAtIndexPath:indexPath];
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {

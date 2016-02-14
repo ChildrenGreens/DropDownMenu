@@ -9,9 +9,11 @@
 #import "DropDownMenuView.h"
 #import "DropDownView.h"
 
-@interface DropDownMenuView ()
+@interface DropDownMenuView ()<DropDownViewDelegate>
 @property (nonatomic, strong) DropDownView *dropDownView;
 
+/// 选中行
+@property (nonatomic, assign)NSUInteger selectedRow;
 @end
 
 @implementation DropDownMenuView
@@ -85,7 +87,10 @@
         }
         
         self.dropDownView = [[DropDownView alloc] initWithFrame:CGRectMake(0, self.frame.size.width * 0.115 + 64, self.frame.size.width, [UIScreen mainScreen].bounds.size.height - self.frame.size.width * 0.115 - 64)];
+        [self.dropDownView setDefualtSelectedWithRow:self.selectedRow];
+        self.dropDownView.delegate = self;
         [thisVC.view addSubview:self.dropDownView];
+        
     }
     
     [thisVC.view bringSubviewToFront:self];
@@ -152,6 +157,11 @@
         }
     }
     return nil;
+}
+
+
+- (void)selectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.selectedRow = indexPath.row;
 }
 
 
